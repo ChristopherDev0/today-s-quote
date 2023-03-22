@@ -20,6 +20,7 @@ function getCategories(){
         const resultOBJ = result.contents.categories;
         showCategories(resultOBJ)
      })
+     .catch(error => console.log(error))
 }
 
 function showCategories(result) {
@@ -46,6 +47,7 @@ function selectedCategory(e) {
             showResults(quote, author, img);
         });
     })
+    .catch(error => console.log(error))
 }
 
 function showResults(quote, author, img){
